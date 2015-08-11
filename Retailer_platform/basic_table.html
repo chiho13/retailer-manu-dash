@@ -196,7 +196,7 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-              	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+              	  <p class="centered"><a href="#testings"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
               	  <h5 class="centered">Marcel Newman</h5>
               	  	
                   <li class="mt">
@@ -479,11 +479,16 @@
     <!--script for this page-->
     
   <script>
-      //custom select box
 
-      $(function(){
-          $('select.styled').customSelect();
-      });
+      $("#testings").click(function() {
+
+
+ $("html, body").animate({
+  scrollTop: $(document).height() - $(window).height()
+});
+  })
+
+});
 
   </script>
 

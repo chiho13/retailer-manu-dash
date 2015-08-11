@@ -12,8 +12,8 @@ Premium: http://www.gridgum.com
 
 /* BASIC THEME CONFIGURATION */
 body {
-    color: #797979;
-	background: #f2f2f2;
+    color: #555;
+	background: #ddd;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -83,7 +83,7 @@ a, a:hover, a:focus {
 }
 
 .bg-theme03 {
-  background-color: #48cfad;
+  background-color: #ff4c4c;
 }
 
 .bg-theme04 {
@@ -238,10 +238,11 @@ ul.top-menu > li > .view-simulator:before {
 /*sidebar navigation*/
 
 #sidebar {
+    z-index:900;
     width: 210px;
     height: 100%;
     position: fixed;
-    background: #C6C8CE;
+    background: #aaa;
 }
 
 #sidebar h5 {
@@ -414,6 +415,7 @@ ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i, ul.sidebar-menu li a
 
 /* MAIN CONTENT CONFIGURATION */
 #main-content {
+    overflow-x:hidden;
     margin-left: 210px;
 }
 
@@ -568,7 +570,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .dropdown-menu.extended li p.green {
-    background-color: #68dff0;
+    background-color: #48cfad;
     color: #fff;
 }
 
@@ -594,8 +596,13 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     color: #2E2E2E;
 }
 
+.retailer-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .desc {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -772,11 +779,16 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     border-top-color: #FCB322 !important;
 }
 .notify-arrow-green {
-    border-color: transparent transparent #68dff0;
-    border-bottom-color: #68dff0 !important;
-    border-top-color: #68dff0 !important;
+    border-color: transparent transparent #48cfad;
+    border-bottom-color: #48cfad !important;
+    border-top-color: #48cfad !important;
 }
 
+.notify-arrow-white {
+    border-color: transparent transparent #fff;
+    border-bottom-color: #fff !important;
+    border-top-color: #fff !important;
+}
 
 
 /*--sidebar toggle---*/
@@ -885,6 +897,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 	text-align: center;
 	color: #989898;
 	border-bottom: 1px solid #989898;
+    transition: all ease 0.2s;
 }
 
 .box1 span {
@@ -898,21 +911,25 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .box0:hover .box1 {
 	border-bottom: 1px solid #ffffff;
+    
 }
 
 .box0 p {
 	text-align: center;
-	font-size: 12px;
-	color: #f2f2f2;
+	font-size: 14px;
+	color: #68dff0;
+    opacity:0;
 }
 
 .box0:hover p {
-	color: #ff865c;
+       transition: all ease 0.2s;
+	   opacity:1;
 }
 
 .box0:hover {
 	background: #ffffff;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.2s;
 }
 
 /* MAIN CHART CONFIGURATION */
@@ -965,7 +982,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .custom-bar-chart .bar .value {
     position: absolute;
     bottom: 0;
-    background: #ff865c;
+    background: #68dff0;
     color: #68dff0;
     width: 100%;
     -webkit-border-radius: 5px 5px 0 0;
@@ -1133,7 +1150,7 @@ PANELS CONFIGURATIONS
 	margin-left: 15px;
 }
 .white-panel .white-header {
-	background: #f4f4f4;
+	background: #fdfdfd;
 	padding: 3px;
 	margin-bottom: 15px;
 	color: #c6c6c6;
@@ -1784,6 +1801,7 @@ background: #fffbcc !important;
 	margin: 10px;
 	padding: 10px;
 	box-shadow: 0px 3px 2px #aab2bd;
+    border-radius: 5px;
 	text-align: left;
 }
 
@@ -2261,6 +2279,10 @@ label {
 
 /*footer*/
 .site-footer {
+    z-index: 1000;
+    position:fixed;
+    bottom:0;
+    width:100%;
     background: #ccc;
     color: #222;
     padding: 10px 0;
@@ -2349,7 +2371,7 @@ label {
 
 .sidebar-footer {
  position: absolute;
- bottom:0 ;
+ bottom:40px ;
  padding: 20px;
  margin-left: 15px
 
@@ -2407,8 +2429,58 @@ label {
 }
 
 .cropped img {
-    width: 160px;
-    border-radius: 50%;
+    width: 150px;
+   /* border-radius: 50%;*/
 }
+
+input[type="text"] {
+    outline:none !important;
+
+}
+textarea {
+  border: none;
+  padding: 5px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 85px;
+  letter-spacing: 1px;
+
+  transition: background 0.5s ease;
+    outline:none;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.no-hover a:hover {
+    background:transparent !important;
+    color: #777 !important;
+
+}
+
+.signout {
+    color: #333;
+    background: #eee;
+    font-size: 14px !important;
+    text-align: center;
+}
+
+.signout a {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+.signout:hover {
+    background: #ddd !important;
+}
+
+#addbrand {
+
+}
+
+#addbrand span i {
+    font-size: 16px;
+    font-weight: 600
+}
+
 
 
