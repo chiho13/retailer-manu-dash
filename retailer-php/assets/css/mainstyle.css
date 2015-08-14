@@ -2477,5 +2477,31 @@ textarea {
 }
 
 
+.btn-addbrand {
+    background: #fff;
+}
+
+.btn-addbrand {
+    background: #fff;
+    border: 2px solid #fefefe;
+    padding-top: 10px;
+    transition: all ease 0.2s;
+    
+
+}
+
+.btn-addbrand:hover {
+    background: #fefefe;
+    border: 2px solid #bbb;
+    transition: all ease 0.2s;
+}
+
+.btn-addbrand span {
+    position:relative;
+     top: -2px;
+     right:2px;
+}
+
+
 
 
