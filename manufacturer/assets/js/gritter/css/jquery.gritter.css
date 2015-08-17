@@ -4,7 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,600italic,700);
 #gritter-notice-wrapper {
 	position:fixed;
-	top:210px;
+	top:172px;
 	left:200px;
 	width:301px;
 	z-index:9999;

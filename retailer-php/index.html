@@ -20,6 +20,8 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/mainstyle.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/buttons.css" />
+
 
     <script src="assets/js/chart-master/Chart.js"></script>
     
@@ -47,11 +49,11 @@
 
             <!--view simulator --> 
 
-            <div>
+            <!-- <div>
               <ul class="nav pull-left top-menu" style="margin-left:50px">
                     <li><a class="view-simulator" href="http://ant-ho.com/3d-platform/platform.html">View Simulator</a></li>
               </ul>
-            </div>
+            </div> -->
             <div class="nav notify-row pull-right " id="top_menu">
                 <!--  notification start -->
                 <ul class="nav  top-menu">
@@ -222,7 +224,7 @@
                   <div class="centered">
                   
                   </div>
-                  <div class="centered logohover"><a href="profile.html" class="cropped"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60" style="width: 60px !important"></a>
+                  <div class="centered logohover"><a href="profile.html" class="cropped"><img src="sofresh-performance-automotive.png" width="80"></a>
                     <button type="button" class="btn btn-info btn-lg btn-editlogo" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></button>
 
                   </div>
@@ -264,14 +266,14 @@
                       </ul>
                   </li> -->
                   <li class="sub-menu">
-                      <a href="todo_list.html" >
+                      <a href="addbrand.html" >
                           <i class="fa fa-book"></i>
                           <span>Add/View Brands</span>
                       </a>
                      
                   </li>
                  <li class="submenu">
-                      <a href="requestbrand.html" id="requestbrand">
+                      <a href="requestbrand2.html" id="requestbrand">
                           <i class="fa fa-tasks"></i>
                           <span>Request a brand</span>
                       </a>
@@ -288,7 +290,7 @@
                       </ul>
                   </li> -->
                   <li class="sub-menu">
-                      <a href="chart.js" >
+                      <a href="analytics.html" >
                           <i class=" fa fa-bar-chart-o"></i>
                           <span>Customer Analytics</span>
                       </a>
@@ -352,133 +354,53 @@
               <div class="row">
                   <div class="col-lg-12 main-chart">
                   
+
+                    <div class="row mtbox">
+                      <div class="col-md-6 col-sm-6 centered">
+                          <button class="button button--wapasha button--round-l button--size-l button--text-thick">Customer Simulator</button>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                          <button class="button button--wapasha button--round-l  button--size-l button--text-thick">View Simulator</button>
+                        
+                      </div>
+                    
+
+
+
+
+                    </div><!-- /row mt -->  
+
                   	<div class="row mtbox">
-                  		<div class="col-md-4 col-sm-4 box0">
+                  		<div class="col-md-6 col-sm-6 box0">
                   			<div class="box1">
-					  			        <span class="li_heart"></span>
-					  			        <h3>933</h3>
+					  			        
+					  			        <span>30</span>
+                          <h2> New Brands</h2>
+                            <p>30 new brands were added to the database</p>
                   			</div>
-					  			      <p>400 Facebook Likes</p>
+					  			      <!-- <p>400 Facebook Likes</p> -->
                   		</div>
-                  		<div class="col-md-4 col-sm-4 box0">
+                  		<div class="col-md-6 col-sm-6 box0">
                   			<div class="box1">
-					  			        <span class="li_cloud"></span>
-					  			        <h3>+48</h3>
+					  			             <span>54</span>
+                          <h2> New Parts</h2>
+                          <p>54 new parts were added to the database</p>
                   			</div>
-					  			      <p>48 New files were added in your cloud storage.</p>
+					  			      
                   		</div>
-                  		<div class="col-md-4 col-sm-4 box0">
+                  		<!-- <div class="col-md-4 col-sm-4 box0">
                   			<div class="box1">
 					  			        <span class="li_stack"></span>
 					  			        <h3>23</h3>
                   			</div>
 					  			      <p>You have 5 unread messages in your inbox.</p>
-                  		</div>
+                  		</div> -->
 
 
 
 
                   	</div><!-- /row mt -->	
                   
-                      
-                      <div class="row mt">
-                      <!-- SERVER STATUS PANELS -->
-                      	
-
-                      	<div class="col-md-4 col-sm-4 mb">
-                      		<div class="white-panel pn">
-                      			<div class="white-header">
-						  			<h5>TOP PRODUCT</h5>
-                      			</div>
-								<div class="row">
-									<div class="col-sm-6 col-xs-6 goleft">
-										<p><i class="fa fa-heart"></i> 122</p>
-									</div>
-									<div class="col-sm-6 col-xs-6"></div>
-	                      		</div>
-	                      		<div class="centered">
-										<img src="assets/img/product.png" width="120">
-	                      		</div>
-                      		</div>
-                      	</div><!-- /col-md-4 -->
-                      	
-						          
-            <div class="col-md-4 mb">
-              <!-- INSTAGRAM PANEL -->
-              <div class="instagram-panel pn">
-                <i class="fa fa-instagram fa-4x"></i>
-                <p>@cartuningshop<br/>
-                  5 min. ago
-                </p>
-                <p><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart"></i> 49</p>
-              </div>
-            </div><!-- /col-md-4 -->
-            
-            <div class="col-md-4 col-sm-4 mb">
-              <!-- REVENUE PANEL -->
-              <div class="darkblue-panel pn">
-                <div class="darkblue-header">
-                  <h5>REVENUE</h5>
-                </div>
-                <div class="chart mt">
-                  <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,464,655]"></div>
-                </div>
-                <p class="mt"><b>$ 17,980</b><br/>Month Income</p>
-              </div>
-            </div><!-- /col-md-4 -->
-                      	
-
-                    </div><!-- /row -->
-                    
-						
-					
-					<div class="row mt">
-                      <!--CUSTOM CHART START -->
-                      <div class="border-head">
-                          <h3>VISITS</h3>
-                      </div>
-                      <div class="custom-bar-chart">
-                          <ul class="y-axis">
-                              <li><span>10.000</span></li>
-                              <li><span>8.000</span></li>
-                              <li><span>6.000</span></li>
-                              <li><span>4.000</span></li>
-                              <li><span>2.000</span></li>
-                              <li><span>0</span></li>
-                          </ul>
-                          <div class="bar">
-                              <div class="title">JAN</div>
-                              <div class="value tooltips" data-original-title="8.500" data-toggle="tooltip" data-placement="top">85%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">FEB</div>
-                              <div class="value tooltips" data-original-title="5.000" data-toggle="tooltip" data-placement="top">50%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">MAR</div>
-                              <div class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top">60%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">APR</div>
-                              <div class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</div>
-                          </div>
-                          <div class="bar">
-                              <div class="title">MAY</div>
-                              <div class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">JUN</div>
-                              <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</div>
-                          </div>
-                          <div class="bar">
-                              <div class="title">JUL</div>
-                              <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
-                          </div>
-                      </div>
-                      <!--custom chart end-->
-                      <br>
-                      <br>
-					</div><!-- /row -->	
 					
                   </div><!-- /col-lg-9 END SECTION MIDDLE -->
                 
@@ -630,6 +552,16 @@
         })
     })
 </script>
+
+<script>
+      (function() {
+        var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+        if(isSafari) {
+          document.getElementById('support-note').style.display = 'block';
+        }
+      })();
+    </script>
+
   
 
   </body>

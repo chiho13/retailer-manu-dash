@@ -178,8 +178,17 @@
                               <li class="no-hover">
                                 <a href="index.html#">
                                     <div class="task-info">
-                                    <div class="retailer-name"> Car Tuning Shop</div>
+                                    <div class="retailer-name"> Vossen Wheels</div>
                                         <div class="desc"> View Profile </div>
+
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">Walk Through</div>
                                         
                                     </div>
                                 </a>
@@ -192,6 +201,8 @@
                                     </div>
                                 </a>
                             </li>
+
+
 
                           
                           
@@ -222,7 +233,7 @@
                   <div class="centered">
                   
                   </div>
-                  <div class="centered logohover"><a href="profile.html" class="cropped"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60" style="width: 60px !important"></a>
+                  <div class="centered logohover"><a href="profile.html" class="cropped"><img src="vossen_wheels.png" width="80"></a>
                     <button type="button" class="btn btn-info btn-lg btn-editlogo" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></button>
 
                   </div>
@@ -264,16 +275,16 @@
                       </ul>
                   </li> -->
                   <li class="sub-menu">
-                      <a href="todo_list.html" >
+                      <a href="addproduct.html" >
                           <i class="fa fa-book"></i>
-                          <span>Add/View Brands</span>
+                          <span>Add Products</span>
                       </a>
                      
                   </li>
                  <li class="submenu">
-                      <a href="requestbrand.html" id="requestbrand">
+                      <a href="requestretailer.html" id="requestbrand">
                           <i class="fa fa-tasks"></i>
-                          <span>Request a brand</span>
+                          <span>Request a retailer</span>
                       </a>
                     
                   </li>
@@ -288,9 +299,9 @@
                       </ul>
                   </li> -->
                   <li class="sub-menu">
-                      <a href="chart.js" >
+                      <a href="analytics.html" >
                           <i class=" fa fa-bar-chart-o"></i>
-                          <span>Customer Analytics</span>
+                          <span>Analytics</span>
                       </a>
                       
                   </li>
@@ -397,7 +408,7 @@
 									<div class="col-sm-6 col-xs-6"></div>
 	                      		</div>
 	                      		<div class="centered">
-										<img src="assets/img/product.png" width="120">
+										<img src="assets/img/silverpolished.png" width="120">
 	                      		</div>
                       		</div>
                       	</div><!-- /col-md-4 -->
@@ -407,7 +418,7 @@
               <!-- INSTAGRAM PANEL -->
               <div class="instagram-panel pn">
                 <i class="fa fa-instagram fa-4x"></i>
-                <p>@cartuningshop<br/>
+                <p>@vossenwheels<br/>
                   5 min. ago
                 </p>
                 <p><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart"></i> 49</p>
@@ -423,7 +434,7 @@
                 <div class="chart mt">
                   <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,464,655]"></div>
                 </div>
-                <p class="mt"><b>$ 17,980</b><br/>Month Income</p>
+                <p class="mt" style="color:#fff"><b>980</b><br/>Monthly Average Sales</p>
               </div>
             </div><!-- /col-md-4 -->
                       	
@@ -525,13 +536,13 @@
             // (string | mandatory) the heading of the notification
             title: 'WELCOME TO THEMODMARKET PLATFORM',
             // (string | mandatory) the text inside the notification
-            text: ' < Start here to add products and brands',
+            text: ' < Start here to add your products',
             // (string | optional) the image to display on the left
             // image: 'assets/img/ui-sam.jpg',
             // (bool | optional) if you want it to fade out on its own or just sit there
-            sticky: true,
+            sticky: false,
             // (int | optional) the time you want it to be alive for before fading out
-            time: '',
+            time: '15000',
             // (string | optional) the class name you want to apply to that specific message
             class_name: 'my-sticky-class'
         });
