@@ -895,7 +895,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .box1 {
 	padding: 15px;
 	text-align: center;
-	color: #989898;
+	color: #444;
 	border-bottom: 1px solid #989898;
     transition: all ease 0.2s;
 }
@@ -910,25 +910,26 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .box0:hover .box1 {
-	border-bottom: 1px solid #ffffff;
+    padding:15px;
+    border-bottom: 3px solid #ffffff;
     
 }
 
 .box0 p {
-	text-align: center;
-	font-size: 14px;
-	color: #68dff0;
+    text-align: center;
+    font-size: 14px;
+    color: #336699;
     opacity:0;
 }
 
 .box0:hover p {
        transition: all ease 0.2s;
-	   opacity:1;
+       opacity:1;
 }
 
 .box0:hover {
-	background: #ffffff;
-	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    background: #fefefe;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
     transition: all ease 0.2s;
 }
 
@@ -1333,19 +1334,40 @@ PANELS CONFIGURATIONS
 }
 
 
-/* Instagram Panel*/
-.instagram-panel {
-	background: url(../img/instagram.jpg) no-repeat center top;
+/* social media panel*/
+.socialmedia-panel {
+	
+    
 	text-align: center;
 	background-position: center center;
 }
-.instagram-panel i {
+.socialmedia-panel i {
 	color: white;
 	margin-top: 35px;
 }
-.instagram-panel p {
+.socialmedia-panel p {
 	margin: 5px;
 	color: white;
+}
+
+.facebook-panel {
+    background: url(../img/socialmedia.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.instagram-panel {
+    background: url(../img/vossen.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.twitter-panel {
+    background: url(../img/twittervossen.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.highlight {
+    height:20px;
+    background: #000;
 }
 
 /* Product Panel */

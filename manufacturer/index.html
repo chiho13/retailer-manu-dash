@@ -7,7 +7,7 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>theModMarket - Retailer Platform</title>
+    <title>theModMarket - Manufacturer Platform</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -20,6 +20,8 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/mainstyle.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/buttons.css" />
+
 
     <script src="assets/js/chart-master/Chart.js"></script>
     
@@ -47,11 +49,11 @@
 
             <!--view simulator --> 
 
-            <div>
+            <!-- <div>
               <ul class="nav pull-left top-menu" style="margin-left:50px">
                     <li><a class="view-simulator" href="http://ant-ho.com/3d-platform/platform.html">View Simulator</a></li>
               </ul>
-            </div>
+            </div> -->
             <div class="nav notify-row pull-right " id="top_menu">
                 <!--  notification start -->
                 <ul class="nav  top-menu">
@@ -178,17 +180,8 @@
                               <li class="no-hover">
                                 <a href="index.html#">
                                     <div class="task-info">
-                                    <div class="retailer-name"> Vossen Wheels</div>
+                                    <div class="retailer-name"> Car Tuning Shop</div>
                                         <div class="desc"> View Profile </div>
-
-                                        
-                                    </div>
-                                </a>
-                            </li>
-                             <li>
-                                <a href="#">
-                                    <div class="task-info">
-                                        <div class="desc">Walk Through</div>
                                         
                                     </div>
                                 </a>
@@ -201,8 +194,6 @@
                                     </div>
                                 </a>
                             </li>
-
-
 
                           
                           
@@ -233,7 +224,7 @@
                   <div class="centered">
                   
                   </div>
-                  <div class="centered logohover"><a href="profile.html" class="cropped"><img src="vossen_wheels.png" width="80"></a>
+                  <div class="centered logohover"><a href="profile.html" class="cropped"><img src="sofresh-performance-automotive.png" width="80"></a>
                     <button type="button" class="btn btn-info btn-lg btn-editlogo" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></button>
 
                   </div>
@@ -277,14 +268,46 @@
                   <li class="sub-menu">
                       <a href="addproduct.html" >
                           <i class="fa fa-book"></i>
-                          <span>Add Products</span>
+                          <span>Add/View Products</span>
                       </a>
                      
                   </li>
                  <li class="submenu">
-                      <a href="requestretailer.html" id="requestbrand">
+                      <a href="requestbrand2.html" id="requestbrand">
                           <i class="fa fa-tasks"></i>
-                          <span>Request a retailer</span>
+                          <span>Request a Retailer</span>
+                      </a>
+                    
+                  </li>
+
+                   <li class="sub-menu">
+                      <a href="analytics.html" >
+                          <i class=" fa fa-bar-chart-o"></i>
+                          <span>Analytics</span>
+                      </a>
+                      
+                  </li>
+
+                  <li class="submenu">
+                      <a href="authorized.html" >
+                          <i class="fa fa-check"></i>
+                          <span>Authorized Retailers</span>
+                      </a>
+                    
+                  </li>
+
+                  <li class="submenu">
+                      <a href="socialmedia.html">
+                          <i class="fa fa-share"></i>
+                          <span>Social Media</span>
+                      </a>
+                    
+                  </li>
+
+                  <li class="submenu">
+                      <a href="emebed.html">
+                          <i class="fa fa-code"></i>
+                          <span>Embed on Website</span>
                       </a>
                     
                   </li>
@@ -298,13 +321,7 @@
                           <li><a  href="responsive_table.html">Responsive Table</a></li>
                       </ul>
                   </li> -->
-                  <li class="sub-menu">
-                      <a href="analytics.html" >
-                          <i class=" fa fa-bar-chart-o"></i>
-                          <span>Analytics</span>
-                      </a>
-                      
-                  </li>
+                 
 
               </ul>
               <!-- sidebar menu end-->
@@ -363,139 +380,104 @@
               <div class="row">
                   <div class="col-lg-12 main-chart">
                   
+
+                    <div class="row mtbox">
+                      <div class="col-md-6 col-sm-6 centered">
+                          <button class="button button--wapasha button--round-l button--size-l button--text-thick">Customer Simulator</button>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                          <button class="button button--wapasha button--round-l  button--size-l button--text-thick">View Simulator</button>
+                        
+                      </div>
+                    
+
+
+
+
+                    </div><!-- /row mt -->  
+
                   	<div class="row mtbox">
-                  		<div class="col-md-4 col-sm-4 box0">
+                  		<div class="col-md-6 col-sm-6 box0">
                   			<div class="box1">
-					  			        <span class="li_heart"></span>
-					  			        <h3>933</h3>
+					  			        
+					  			        <span>8</span>
+                          <h2> New Retailers</h2>
+                            <p>30 new brands were added to the database</p>
                   			</div>
-					  			      <p>400 Facebook Likes</p>
+				
                   		</div>
-                  		<div class="col-md-4 col-sm-4 box0">
+                  		<div class="col-md-6 col-sm-6 box0">
                   			<div class="box1">
-					  			        <span class="li_cloud"></span>
-					  			        <h3>+48</h3>
+					  			             <span>54</span>
+                          <h2> New Views</h2>
+                          <p>54 new parts were added to the database</p>
                   			</div>
-					  			      <p>48 New files were added in your cloud storage.</p>
+					  			      
                   		</div>
-                  		<div class="col-md-4 col-sm-4 box0">
+                  		<!-- <div class="col-md-4 col-sm-4 box0">
                   			<div class="box1">
 					  			        <span class="li_stack"></span>
 					  			        <h3>23</h3>
                   			</div>
 					  			      <p>You have 5 unread messages in your inbox.</p>
-                  		</div>
+                  		</div> -->
 
 
 
 
                   	</div><!-- /row mt -->	
-                  
-                      
-                      <div class="row mt">
-                      <!-- SERVER STATUS PANELS -->
-                      	
 
-                      	<div class="col-md-4 col-sm-4 mb">
-                      		<div class="white-panel pn">
-                      			<div class="white-header">
-						  			<h5>TOP PRODUCT</h5>
-                      			</div>
-								<div class="row">
-									<div class="col-sm-6 col-xs-6 goleft">
-										<p><i class="fa fa-heart"></i> 122</p>
-									</div>
-									<div class="col-sm-6 col-xs-6"></div>
-	                      		</div>
-	                      		<div class="centered">
-										<img src="assets/img/silverpolished.png" width="120">
-	                      		</div>
-                      		</div>
-                      	</div><!-- /col-md-4 -->
-                      	
-						          
+
+                    <div class="row mt">
+                      <!-- SERVER STATUS PANELS -->
+                        
+
+                        <div class="col-md-4 col-sm-4 mb">
+                                       <!-- facebook PANEL -->
+                             <div class="facebook-panel socialmedia-panel pn">
+                               <i class="fa fa-facebook fa-4x"></i>
+                               <p><span class="highlight">vossenwheels<br/>
+                                 15 min. ago</span>
+                               </p>
+                               <p><span class="highlight"><i class="fa fa-comment"></i> 24 | <i class="fa fa-thumbs-o-up"></i> 49</span></p>
+                             </div>
+                        </div><!-- /col-md-4 -->
+                        
+                      
             <div class="col-md-4 mb">
               <!-- INSTAGRAM PANEL -->
-              <div class="instagram-panel pn">
+              <div class="socialmedia-panel instagram-panel pn">
                 <i class="fa fa-instagram fa-4x"></i>
-                <p>@vossenwheels<br/>
-                  5 min. ago
+                <p><span class="highlight">@vossenwheels<br/>
+                  5 min. ago </span>
                 </p>
-                <p><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart"></i> 49</p>
+                <p><span class="highlight"><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart"></i> 49</span></p>
               </div>
             </div><!-- /col-md-4 -->
             
             <div class="col-md-4 col-sm-4 mb">
-              <!-- REVENUE PANEL -->
-              <div class="darkblue-panel pn">
-                <div class="darkblue-header">
-                  <h5>REVENUE</h5>
-                </div>
-                <div class="chart mt">
-                  <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,464,655]"></div>
-                </div>
-                <p class="mt" style="color:#fff"><b>980</b><br/>Monthly Average Sales</p>
+              <!-- Twitter -->
+              <div class="socialmedia-panel twitter-panel pn">
+                <i class="fa fa-twitter fa-4x"></i>
+                <p><span class="highlight">@vossenwheels<br/>
+                  5 min. ago </span>
+                </p>
+                <p><span class="highlight"><i class="fa fa-comment"></i> 18 | <i class="fa fa-star-o"></i> 7</span></p>
               </div>
             </div><!-- /col-md-4 -->
-                      	
+                        
 
                     </div><!-- /row -->
-                    
-						
-					
-					<div class="row mt">
-                      <!--CUSTOM CHART START -->
-                      <div class="border-head">
-                          <h3>VISITS</h3>
-                      </div>
-                      <div class="custom-bar-chart">
-                          <ul class="y-axis">
-                              <li><span>10.000</span></li>
-                              <li><span>8.000</span></li>
-                              <li><span>6.000</span></li>
-                              <li><span>4.000</span></li>
-                              <li><span>2.000</span></li>
-                              <li><span>0</span></li>
-                          </ul>
-                          <div class="bar">
-                              <div class="title">JAN</div>
-                              <div class="value tooltips" data-original-title="8.500" data-toggle="tooltip" data-placement="top">85%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">FEB</div>
-                              <div class="value tooltips" data-original-title="5.000" data-toggle="tooltip" data-placement="top">50%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">MAR</div>
-                              <div class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top">60%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">APR</div>
-                              <div class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</div>
-                          </div>
-                          <div class="bar">
-                              <div class="title">MAY</div>
-                              <div class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">JUN</div>
-                              <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</div>
-                          </div>
-                          <div class="bar">
-                              <div class="title">JUL</div>
-                              <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
-                          </div>
-                      </div>
-                      <!--custom chart end-->
-                      <br>
-                      <br>
-					</div><!-- /row -->	
+                  
 					
                   </div><!-- /col-lg-9 END SECTION MIDDLE -->
                 
               </div>
           </section>
       </section>
+
+      <br>
+      <br>
 
       <!--main content end-->
       <!--footer start-->
@@ -536,13 +518,13 @@
             // (string | mandatory) the heading of the notification
             title: 'WELCOME TO THEMODMARKET PLATFORM',
             // (string | mandatory) the text inside the notification
-            text: ' < Start here to add your products',
+            text: ' < Start here to add products and brands',
             // (string | optional) the image to display on the left
             // image: 'assets/img/ui-sam.jpg',
             // (bool | optional) if you want it to fade out on its own or just sit there
-            sticky: false,
+            sticky: true,
             // (int | optional) the time you want it to be alive for before fading out
-            time: '15000',
+            time: '',
             // (string | optional) the class name you want to apply to that specific message
             class_name: 'my-sticky-class'
         });
@@ -641,6 +623,16 @@
         })
     })
 </script>
+
+<script>
+      (function() {
+        var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+        if(isSafari) {
+          document.getElementById('support-note').style.display = 'block';
+        }
+      })();
+    </script>
+
   
 
   </body>
