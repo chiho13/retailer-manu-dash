@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>theModMarket - Retailer Platform</title>
+    <title>theModMarket - Manufacturer Platform</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -21,7 +21,8 @@
     <link href="assets/css/mainstyle.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/buttons.css" />
-      <link href="assets/css/analytics.css" rel="stylesheet">
+
+     <link rel="stylesheet" type="text/css" href="assets/css/embed.css" />
 
     <script src="assets/js/chart-master/Chart.js"></script>
     
@@ -30,10 +31,6 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <style>
-  
-    </style>
   </head>
 
   <body>
@@ -283,17 +280,8 @@
                       </a>
                     
                   </li>
-                 <!--  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-th"></i>
-                          <span>Data Tables</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="basic_table.html">Basic Table</a></li>
-                          <li><a  href="responsive_table.html">Responsive Table</a></li>
-                      </ul>
-                  </li> -->
-                  <li class="sub-menu">
+
+                   <li class="sub-menu">
                       <a href="analytics.html" >
                           <i class=" fa fa-bar-chart-o"></i>
                           <span>Analytics</span>
@@ -324,6 +312,18 @@
                       </a>
                     
                   </li>
+                 <!--  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-th"></i>
+                          <span>Data Tables</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="basic_table.html">Basic Table</a></li>
+                          <li><a  href="responsive_table.html">Responsive Table</a></li>
+                      </ul>
+                  </li> -->
+                 
+
               </ul>
               <!-- sidebar menu end-->
 
@@ -374,102 +374,75 @@
       <!-- **********************************************************************************************************************************************************
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
+
+     
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
-              <h3><i class="fa fa-angle-right"></i> Analytics</h3>
+          <h3><i class="fa fa-angle-right"></i> Embed Simulator to Website</h3>
+           <br>
+      <br>
               <div class="row">
-                  <div class="col-lg-12 main-chart">
-                  
+                  <div class="col-lg-12 social-buttons">
 
-                    <div class="row mtbox coming-soon">
-                     
-                        <h1 style="text-align:center"> COMING SOON</h1>
-                      </div>
-                    
-                    </div><!-- /row mt -->  
 
-                  
-                      
-                      <div class="row mt">
+                    <div class="row mt">
                       <!-- SERVER STATUS PANELS -->
-                      	
+                        
 
-                      	<div class="col-md-4 mb top-product" >
-                      		<div class="white-panel pn">
-                      			<div class="white-header">
-						  			           <h5>TOP PRODUCT</h5>
-                      			</div>
-								            <div class="row">
-									             <div class="col-sm-6 col-xs-6 goleft">
-										              <p><i class="fa fa-heart"></i> 122</p>
-									             </div>
-									             <div class="col-sm-6 col-xs-6"></div>
-	                      		</div>
-	                      		<div class="centered">
-										          <img src="assets/img/silverpolished.png" width="120">
-	                      		</div>
-                      		</div>
-                      	</div><!-- /col-md-4 -->
-                      	
+                        <div class="col-md-10 col-sm-10 mb">
+                                       <!-- facebook PANEL -->
+                          <button class="button button--wapasha button--round-l button--size-l button--text-thick" data-toggle="modal" data-target="#embed"><span><i class="fa fa-code"></i></span> Get code</button>
+                        </div><!-- /col-md-4 -->
 
-                    </div><!-- /row -->
-                    
-						
-					
-					<div class="row mt visits">
-                      <!--CUSTOM CHART START -->
-                      <div class="border-head">
-                          <h3>VISITS</h3>
+                        <!-- Modal -->
+                      <div class="modal fade" id="embed" role="dialog">
+                        <div class="modal-dialog">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Your Plugin Code</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>1. Initialize the Javascript SDK. Include code once right after the opening body tag </p>
+                             
+                              <code>
+                                dummy code
+                                $("#platform").platform({
+                                  fullscreen:true;
+                                  lazyload: true
+                                });
+                                
+                              </code>
+                              <hr>
+                              <p>2. Place the code for your plugin wherever you want the plugin to appear on your page. </p>
+                            
+                              <code>
+                               &lt;div id="platform" data-href="https://api.modmarket/docs/plugins/" data-layout="standard" data-action="render">&lt;/div>
+                              </code>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                          
+                        </div>
                       </div>
-                      <div class="custom-bar-chart">
-                          <ul class="y-axis">
-                              <li><span>10.000</span></li>
-                              <li><span>8.000</span></li>
-                              <li><span>6.000</span></li>
-                              <li><span>4.000</span></li>
-                              <li><span>2.000</span></li>
-                              <li><span>0</span></li>
-                          </ul>
-                          <div class="bar">
-                              <div class="title">JAN</div>
-                              <div class="value tooltips" data-original-title="8.500" data-toggle="tooltip" data-placement="top">85%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">FEB</div>
-                              <div class="value tooltips" data-original-title="5.000" data-toggle="tooltip" data-placement="top">50%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">MAR</div>
-                              <div class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top">60%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">APR</div>
-                              <div class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</div>
-                          </div>
-                          <div class="bar">
-                              <div class="title">MAY</div>
-                              <div class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</div>
-                          </div>
-                          <div class="bar ">
-                              <div class="title">JUN</div>
-                              <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</div>
-                          </div>
-                          <div class="bar">
-                              <div class="title">JUL</div>
-                              <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
-                          </div>
-                      </div>
-                      <!--custom chart end-->
-                      <br>
-                      <br>
-					</div><!-- /row -->	
+                        
+            
+                  
 					
                   </div><!-- /col-lg-9 END SECTION MIDDLE -->
                 
               </div>
           </section>
       </section>
+
+      <br>
+      <br>
 
       <!--main content end-->
       <!--footer start-->
