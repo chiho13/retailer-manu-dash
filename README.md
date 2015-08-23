@@ -2,4 +2,4 @@
 
 ### HTML, CSS, JQuery and php
 
-#### Copy "retailer-php" into local server to test upload function
+#### Transfer files into local server or upload to FTP server
