@@ -1,0 +1,15 @@
+.modal-header {
+	background: #fff !important;
+}
+
+.modal-title {
+	color:#000
+}
+
+#embed {
+	margin-top:100px;
+}
+
+.modal-body {
+	min-height: 250px;
+}
