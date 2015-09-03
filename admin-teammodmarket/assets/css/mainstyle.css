@@ -75,7 +75,7 @@ a, a:hover, a:focus {
 /*Theme Backgrounds*/
 
 .bg-theme {
-	background-color: #68dff0;
+	background-color: #336699;
 }
 
 .bg-theme02 {
@@ -211,7 +211,7 @@ hr {
 }
 
 .bg-theme {
-	background-color: #68dff0;
+	background-color: #336699;
 }
 
 ul.top-menu > li > .view-simulator {
@@ -838,7 +838,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 	line-height: 60px;
 	height: 60px;
 	margin: 0;
-	background: #ff865c;
+	background: #FF4C4C;
 	text-align: center;
 }
 
@@ -882,8 +882,29 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .ds a {
-	color: #68dff0;
+	color: #336699;
+    margin-right: 5px;
 }
+
+.status{
+    
+    position:relative;
+    bottom:10px; 
+    right:0;
+    width: 10px; 
+    height:10px;
+    border-radius: 50%;
+
+}
+
+.online {
+    background:#66FF66; 
+}
+
+.offline {
+    background: #FF4C4C;
+}
+
 
 /* LINE ICONS CONFIGURATION */
 
@@ -893,16 +914,24 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .box1 {
-	padding: 10px;
+	padding: 2px;
 	text-align: center;
 	color: #444;
     background: #fefefe;
+    padding-top: 5px;
+    margin: -10px;
+    height: 147px;
+    border-radius: 5px;
 	/*border-bottom: 1px solid #989898;*/
-   /* border: 1px solid #ccc;*/
+    border: 3px solid #336699;
     -moz-box-shadow: 1px 1px 2px 1px #bbb;
      -webkit-box-shadow: 1px 1px 2px 1px #bbb;
        box-shadow: 1px 1px 2px 1px #bbb;
     transition: all ease 0.2s;
+}
+
+.server {
+    border-color:#66FF66;
 }
 
 .box1 span {
@@ -915,8 +944,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .box0:hover .box1, .box0:hover .box2{
-    padding:10px;
-    margin:0;
+    padding:2px;
     -moz-box-shadow: none;
      -webkit-box-shadow: none;
        box-shadow: none;
@@ -926,11 +954,15 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     
 }
 
+
+
 .box0 p {
     text-align: center;
     font-size: 14px;
     color: #336699;
     opacity:0;
+    position:relative;
+    bottom: 34px;
 }
 
 .box0:hover p {
@@ -939,6 +971,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .box1:hover {
+    border: 2px solid #336699;
     background: #eee;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
     transition: all ease 0.2s;
