@@ -20,10 +20,21 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/mainstyle.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="assets/css/buttons.css" />
-    <link rel="stylesheet" href="assets/css/to-do.css">
 
     <script src="assets/js/chart-master/Chart.js"></script>
+
+       <link href="assets/js/advanced-datatable/media/css/demo_page.css" rel="stylesheet" />
+    <link href="assets/js/advanced-datatable/media/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/js/advanced-datatable/media/css/DT_bootstrap.css" />
+
+     <!-- Custom styles for this template -->
+   
+
+    <link rel="stylesheet" type="text/css" href="assets/css/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/tabstyles.css" />
+      <script src="assets/js/modernizr.custom.js"></script>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -314,7 +325,7 @@
                      
                   </li>
                  <li class="submenu">
-                      <a href="customerlist.html">
+                      <a href="customerlist.html" class="active">
                           <i class="fa fa-tasks"></i>
                           <span>Customer List</span>
                       </a>
@@ -408,302 +419,206 @@
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <section id="main-content">
+      <!--Start of Tawk.to Script-->
+
+<!--End of Tawk.to Script-->
+
+<section id="main-content">
           <section class="wrapper">
-
-              <div class="row">
-                  <div class="col-lg-9 main-chart">
-                  
-
-                    <div class="row mtbox">
-                      <div class="col-md-6 col-sm-6 centered">
-                          <button class="button button--wapasha button--round-l button--size-l button--text-thick">Manufacturer Simulator</button>
-                      </div>
-                      <div class="col-md-6 col-sm-6">
-                          <button class="button button--wapasha button--round-l  button--size-l button--text-thick">Retailer Simulator</button>
-                        
-                      </div>
-
-                    </div><!-- /row mt -->  
-
-
-                  	<div class="row mtbox">
-                  		<div class="col-md-2 col-sm-2 box0">
-                  			<div class="box1">
-					  			        
-					  			        <span>528</span>
-                          <h4> New Customer Visits</h4>
-                            
-                  			</div>
-				
-                  		</div>
-                  		<div class="col-md-2 col-sm-2 box0">
-                  			<div class="box1">
-					  			             <span>31</span>
-                          <h4> New Retailers</h4>
-                         <!--  <p>31 new retailers added in the last 6 months</p> -->
-                  			</div>
-					  			      
-                  		</div>
-
-                      <div class="col-md-2 col-sm-2 box0">
-                        <div class="box1">
-                               <span>53</span>
-                          <h4> New Manufacturers</h4>
-                         <!--  <p>53 new manufacturers added in the last 6 months</p> -->
-                        </div>
-                        
-                      </div>
-
-                      <div class="col-md-2 col-sm-2 box0">
-                        <div class="box1">
-                               <span>2242</span>
-                          <h4> No. of parts in system</h4>
-                        <!--   <p>2242 parts in the database</p> -->
-                        </div>
-                        
-                      </div>
-
-                      <div class="col-md-2 col-sm-2 box0">
-                        <div class="box1">
-                               <span>1232</span>
-                          <h4>Total number of orders</h4>
-                         <!--  <p>1232 orders since the beginning</p> -->
-                        </div>
-                        
-                      </div>
-
-                      <div class="col-md-2 col-sm-2 box0">
-                        <div class="box1 server">
-                  <span class="li_data"></span>
-                  <h3>OK!</h3>
-                        </div>
-                  <p>Your server is working perfectly.</p>
-                      </div>
-                  		<!-- <div class="col-md-4 col-sm-4 box0">
-                  			<div class="box1">
-					  			        <span class="li_stack"></span>
-					  			        <h3>23</h3>
-                  			</div>
-					  			      <p>You have 5 unread messages in your inbox.</p>
-                  		</div> -->
-
-
-
-
-                  	</div><!-- /row mt -->	
-
-
-
-                    <div class="row mt mb">
-                  <div class="col-md-12">
-                      <section class="task-panel tasks-widget">
-                    <div class="panel-heading">
-                          <div class="pull-left"><h5><i class="fa fa-tasks"></i> Tasks in Progress</h5></div>
-                          <br>
-                    </div>
-                          <div class="panel-body">
-                              <div class="task-content">
-                                  <ul id="sortable" class="task-list">
-                                      <li class="list-primary">
-                                          <i class=" fa fa-ellipsis-v"></i>
-                                          <div class="task-checkbox">
-                                              <input type="checkbox" class="list-child" value=""  />
-                                          </div>
-                                          <div class="task-title">
-                                              <span class="task-title-sp">Render Parts for Vossen</span>
-                                              <span class="badge bg-theme">Mid</span>
-                                              <div class="pull-right hidden-phone">
-                                                  <button class="btn btn-success btn-xs fa fa-check"></button>
-                                                  <button class="btn btn-primary btn-xs fa fa-pencil"></button>
-                                                  <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
-                                              </div>
-                                          </div>
-                                      </li>
-
-                                      <li class="list-danger">
-                                          <i class=" fa fa-ellipsis-v"></i>
-                                          <div class="task-checkbox">
-                                              <input type="checkbox" class="list-child" value=""  />
-                                          </div>
-                                          <div class="task-title">
-                                              <span class="task-title-sp">Upload Database for JDM</span>
-                                              <span class="badge bg-warning">High</span>
-                                              <div class="pull-right hidden-phone">
-                                                  <button class="btn btn-success btn-xs fa fa-check"></button>
-                                                  <button class="btn btn-primary btn-xs fa fa-pencil"></button>
-                                                  <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
-                                              </div>
-                                          </div>
-                                      </li>
-                                      <li class="list-success">
-                                          <i class=" fa fa-ellipsis-v"></i>
-                                          <div class="task-checkbox">
-                                              <input type="checkbox" class="list-child" value=""  />
-                                          </div>
-                                          <div class="task-title">
-                                              <span class="task-title-sp">Renew subcription for Retailer</span>
-                                              <span class="badge bg-warning">High</span>
-                                              <div class="pull-right hidden-phone">
-                                                  <button class="btn btn-success btn-xs fa fa-check"></button>
-                                                  <button class="btn btn-primary btn-xs fa fa-pencil"></button>
-                                                  <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
-                                              </div>
-                                          </div>
-                                      </li>
-                                      <li class="list-warning">
-                                          <i class=" fa fa-ellipsis-v"></i>
-                                          <div class="task-checkbox">
-                                              <input type="checkbox" class="list-child" value=""  />
-                                          </div>
-                                          <div class="task-title">
-                                              <span class="task-title-sp">Add Database for Works</span>
-                                              <span class="badge bg-info">Low</span>
-                                              <div class="pull-right hidden-phone">
-                                                  <button class="btn btn-success btn-xs fa fa-check"></button>
-                                                  <button class="btn btn-primary btn-xs fa fa-pencil"></button>
-                                                  <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
-                                              </div>
-                                          </div>
-                                      </li>
-                                      <li class="list-info">
-                                          <i class=" fa fa-ellipsis-v"></i>
-                                          <div class="task-checkbox">
-                                              <input type="checkbox" class="list-child" value=""  />
-                                          </div>
-                                          <div class="task-title">
-                                              <span class="task-title-sp">Transfer database to platform</span>
-                                              <span class="badge bg-important">Highest</span>
-                                              <div class="pull-right hidden-phone">
-                                                  <button class="btn btn-success btn-xs fa fa-check"></button>
-                                                  <button class="btn btn-primary btn-xs fa fa-pencil"></button>
-                                                  <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
-                                              </div>
-                                          </div>
-                                      </li>
-
-                                  </ul>
-                              </div>
-                              <div class=" add-task-row">
-                                  <a class="btn btn-success btn-sm pull-left" href="todo_list.html#">Add New Tasks</a>
-                                  <a class="btn btn-default btn-sm pull-right" href="todo_list.html#">See All Tasks</a>
-                              </div>
+              <section>
+                      <div class="tabs tabs-style-linebox">
+                        <nav>
+                          <ul>
+                            <li><a href="#section-linebox-1"><span>Retailer</span></a></li>
+                            <li><a href="#section-linebox-2"><span>Manufacturer</span></a></li>
+                           
+                          </ul>
+                        </nav>
+                        <div class="content-wrap">
+                          <section id="section-linebox-1">
+                            <div class="content-panel">
+                                <table class="table table-striped table-advance table-hover">
+                            <h4><i class="fa fa-angle-right"></i>Retailer</h4>
+                            <hr>
+                              <thead>
+                              <tr>
+                                  <th><i class="fa fa-bullhorn"></i> Company</th>
+                                  <th class="hidden-phone"><i class="fa fa-question-circle"></i> Descrition</th>
+                                  <th><i class="fa fa-bookmark"></i> Profit</th>
+                                  <th><i class=" fa fa-edit"></i> Status</th>
+                                  <th></th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <tr>
+                                  <td><a href="basic_table.html#">Company Ltd</a></td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>12000.00$ </td>
+                                  <td><span class="label label-info label-mini">Due</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <a href="basic_table.html#">
+                                          Dashgum co
+                                      </a>
+                                  </td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>17900.00$ </td>
+                                  <td><span class="label label-warning label-mini">Due</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <a href="basic_table.html#">
+                                          Another Co
+                                      </a>
+                                  </td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>14400.00$ </td>
+                                  <td><span class="label label-success label-mini">Paid</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <a href="basic_table.html#">
+                                          Dashgum ext
+                                      </a>
+                                  </td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>22000.50$ </td>
+                                  <td><span class="label label-success label-mini">Paid</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><a href="basic_table.html#">Total Ltd</a></td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>12120.00$ </td>
+                                  <td><span class="label label-warning label-mini">Due</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              </tbody>
+                          </table>
                           </div>
-                      </section>
-                  </div><!--/col-md-12 -->
-              </div><!-- /row -->
-                  
-					
-                  </div><!-- /col-lg-9 END SECTION MIDDLE -->
+              <!-- page end-->
+                          </section>
+                         
+                        </div><!-- /content -->
 
-
-
-
-                  <div class="col-lg-3 ds">
-                    <!--COMPLETED ACTIONS DONUTS CHART-->
-                    <h3>NOTIFICATIONS</h3>
-                                        
-                      <!-- First Action -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-                        </div>
-                        <div class="details">
-                          <p><muted>2 Minutes Ago</muted><br/>
-                             <a href="#">Vossen Wheels</a>Added a new product<br/>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Second Action -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-                        </div>
-                        <div class="details">
-                          <p><muted>3 Hours Ago</muted><br/>
-                             <a href="#">Diana Kennedy</a> purchased a year subscription.<br/>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Third Action -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-                        </div>
-                        <div class="details">
-                          <p><muted>7 Hours Ago</muted><br/>
-                             <a href="#">Brandon Page</a> purchased a year subscription.<br/>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Fourth Action -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-                        </div>
-                        <div class="details">
-                          <p><muted>11 Hours Ago</muted><br/>
-                             <a href="#">Mark Twain</a> commented your post.<br/>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Fifth Action -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-                        </div>
-                        <div class="details">
-                          <p><muted>18 Hours Ago</muted><br/>
-                             <a href="#">Daniel Pratt</a> purchased a wallet in your store.<br/>
-                          </p>
-                        </div>
-                      </div>
-
-                       <!-- USERS ONLINE SECTION -->
-            <h3>TEAM MEMBERS</h3>
-                      <!-- First Member -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <img class="img-circle" src="assets/img/teamavatar/rachel.png" width="35px" height="35px" align="">
-                          <div class="status online" style=""></div>
-                        </div>
-                        <div class="details">
-                          <p><a href="#">Rachel Bartholomew</a><br/>
-                             <muted>Online</muted>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Second Member -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <img class="img-circle" src="assets/img/teamavatar/michael.png" width="35px" height="35px" align="">
-                            <div class="status offline" style=""></div>
-                        </div>
-                        <div class="details">
-                          <p><a href="#">Michael Wong</a><br/>
-                             <muted>I am Busy</muted>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Third Member -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <img class="img-circle" src="assets/img/teamavatar/anthony.png" width="35px" height="35px" align="">
-                          <div class="status online" style=""></div>
-                        </div>
-                        <div class="details">
-                          <p><a href="#">Anthony Ho</a><br/>
-                             <muted>Online</muted>
-                          </p>
-                        </div>
-                      </div>
-                      
-                  </div><!-- /col-lg-3 -->
-
-                
-              </div>
+                        <div class="content-wrap">
+                          <section id="section-linebox-2">
+                            <div class="content-panel">
+                                <table class="table table-striped table-advance table-hover">
+                            <h4><i class="fa fa-angle-right"></i> Manufacturer</h4>
+                            <hr>
+                              <thead>
+                              <tr>
+                                  <th><i class="fa fa-bullhorn"></i> Company</th>
+                                  <th class="hidden-phone"><i class="fa fa-question-circle"></i> Descrition</th>
+                                  <th><i class="fa fa-bookmark"></i> Profit</th>
+                                  <th><i class=" fa fa-edit"></i> Status</th>
+                                  <th></th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <tr>
+                                  <td><a href="basic_table.html#">Company Ltd</a></td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>12000.00$ </td>
+                                  <td><span class="label label-info label-mini">Due</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <a href="basic_table.html#">
+                                          Dashgum co
+                                      </a>
+                                  </td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>17900.00$ </td>
+                                  <td><span class="label label-warning label-mini">Due</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <a href="basic_table.html#">
+                                          Another Co
+                                      </a>
+                                  </td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>14400.00$ </td>
+                                  <td><span class="label label-success label-mini">Paid</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <a href="basic_table.html#">
+                                          Dashgum ext
+                                      </a>
+                                  </td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>22000.50$ </td>
+                                  <td><span class="label label-success label-mini">Paid</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><a href="basic_table.html#">Total Ltd</a></td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>12120.00$ </td>
+                                  <td><span class="label label-warning label-mini">Due</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              </tbody>
+                          </table>
+                          </div>
+              <!-- page end-->
+                          </section>
+                         
+                        </div><!-- /content -->
+                      </div><!-- /tabs -->
+                    </section>
           </section>
-      </section>
+  </section>
 
       <br>
       <br>
@@ -879,7 +794,56 @@
       })();
     </script>
 
+    <!-- Tab -->
+
+    <script src="assets/js/cbpFWTabs.js"></script>
+    <script>
+      (function() {
+
+        [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+          new CBPFWTabs( el );
+        });
+
+      })();
+    </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/55e9d5a1d4058169055cefc8/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+   <!-- begin olark code -->
+<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('1783-326-10-5686');/*]]>*/</script><noscript><a href="https://www.olark.com/site/1783-326-10-5686/contact" title="Contact us" target="_blank"></noscript>
+<!-- end olark code -->
   
 
+    <!-- js placed at the end of the document so the pages load faster -->
+  
   </body>
 </html>
