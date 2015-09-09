@@ -51,7 +51,7 @@ a, a:hover, a:focus {
 .modal-title {
 	color: white;
 }
-
+ 
 .btn-round {
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -293,7 +293,7 @@ ul.sidebar-menu , ul.sidebar-menu li ul.sub{
 }
 
 ul.sidebar-menu {
-    margin-top: 75px;
+    margin-top: 45px;
 }
 
 #sidebar > ul > li > ul.sub {
@@ -425,7 +425,8 @@ ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i, ul.sidebar-menu li a
 }
 
 .header {
-    position: fixed;
+    position: relative;
+    cursor: pointer;
     left: 0;
     right: 0;
     z-index: 1002;
@@ -438,7 +439,6 @@ ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i, ul.sidebar-menu li a
 
 .wrapper {
     display: inline-block;
-    margin-top: 60px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -2568,6 +2568,21 @@ textarea {
      right:2px;
 }
 
+
+.table thead tr {
+    text-align: center;
+}
+
+.content-panel table {
+    font-size: 1em;
+}
+
+.hiddenRow ul{
+ text-indent: 150px;
+}
+.hiddenRow ul li{
+font-weight: 600;
+}
 
 
 

@@ -17,7 +17,7 @@
 	margin: 0 auto;
 	width: 100%;
 	font-weight: 300;
-	font-size: 1.25em;
+	font-size: 0.9em;
 }
 
 /* Nav */
@@ -54,6 +54,7 @@
 	display: block;
 	margin: 0;
 	text-align: center;
+	font-size: 1.5em;
 	-webkit-flex: 1;
 	-moz-flex: 1;
 	-ms-flex: 1;
@@ -71,11 +72,11 @@
 
 .tabs nav a span {
 	vertical-align: middle;
-	font-size: 0.75em;
+	font-size: 1em;
 }
 
 .tabs nav li.tab-current a {
-	color: #74777b;
+	color: #336699;
 }
 
 .tabs nav a:focus {
@@ -149,7 +150,7 @@
 	margin: 0 auto;
 	padding: 1em;
 	max-width: 1200px;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .content-wrap section.content-current {
@@ -159,9 +160,9 @@
 .content-wrap section p {
 	margin: 0;
 	padding: 0.75em 0;
-	color: rgba(40,44,42,0.05);
+	color: rgba(40,44,42,0.5);
 	font-weight: 900;
-	font-size: 4em;
+	font-size: 1em;
 	line-height: 1;
 }
 

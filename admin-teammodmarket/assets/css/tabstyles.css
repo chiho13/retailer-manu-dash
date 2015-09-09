@@ -660,7 +660,7 @@
 
 .tabs-style-linebox nav a:hover,
 .tabs-style-linebox nav a:focus {
-	color: #2CC185;
+	color: #336699;
 }
 
 .tabs-style-linebox nav li.tab-current a {
@@ -692,7 +692,7 @@
 .tabs-style-linebox nav a:hover::after,
 .tabs-style-linebox nav a:focus::after,
 .tabs-style-linebox nav li.tab-current a::after {
-	background: #2CC185;
+	background: #336699;
 }
 
 @media screen and (max-width: 58em) {
