@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,10 @@
     <title>theModMarket - Manufacturer Platform</title>
 
     <!-- Bootstrap core CSS -->
+    <!--
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
@@ -35,6 +38,14 @@
     <link rel="stylesheet" type="text/css" href="assets/css/tabs.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/tabstyles.css" />
       <script src="assets/js/modernizr.custom.js"></script>
+
+     
+
+
+    <!--X Editable -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-editable.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/bootstrap-editable.min.js" />
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -334,23 +345,23 @@
 
                    <li class="sub-menu">
                       <a href="in_progress.html" >
-                          <i class=" fa fa-bar-chart-o"></i>
+                          <i class=" fa fa-road"></i>
                           <span>In Progress</span>
                       </a>
                       
                   </li>
-
+<!-- 
                   <li class="submenu">
                       <a href="messaging.html" >
-                          <i class="fa fa-check"></i>
+                          <i class="fa fa-envelope"></i>
                           <span>Messaging</span>
                       </a>
                     
-                  </li>
+                  </li> -->
 
                   <li class="submenu">
                       <a href="backup.html">
-                          <i class="fa fa-link"></i>
+                          <i class="fa fa-download"></i>
                           <span>Backup</span>
                       </a>
                     
@@ -467,7 +478,7 @@
 </tr> 
 </tbody> 
 </table>  -->
-              <section>
+              <section ng-controller="Ctrl">
                       <div class="tabs tabs-style-linebox">
                         <nav>
                           <ul>
@@ -496,16 +507,18 @@
             <td>15 October 2013</td>
             <td> Fresh Co</td>
             <td data-toggle="collapse" data-target="#demo1" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-            <td class="text-success">Yes</td>
+            <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
+   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
+  </a></span></td>
             <td class="btn btn-primary text-error">Notify</td>
             
         </tr>
         <tr >
             <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1">
-            <ul>
-              <li>Address:</li>
-              <li>Email:</li>
-              <li>Subcription Price/Month:</li>
+            <ul colspan="3">
+              <li>Address: <a href="#" editable-text="user.address">{{ user.address || "empty" }}</a></li>
+              <li>Email: <a href="#" editable-text="user.email">{{ user.email || "empty" }}</a></li>
+              <li>Subcription Price/Month: $</li>
                <li>Phone No: </li>
                </ul>
 
@@ -516,15 +529,17 @@
             <td>05 November 2015</td>
             <td>JDM</td>
             <td data-toggle="collapse" data-target="#demo2" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-               <td class="text-success">Yes</td>
+               <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
+   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
+  </a></span></td>
             <td class="btn btn-primary text-error">Notify</td>
         </tr>
         <tr>
             <td colspan="6" class="hiddenRow"><div id="demo2" class="accordian-body collapse">
                  <ul>
-              <li>Address:</li>
-              <li>Email:</li>
-              <li>Subcription Price/Month:</li>
+               <li>Address: <a href="#" editable-text="jdm.address">{{ user.address || "empty" }}</a></li>
+              <li>Email: <a href="#" editable-text="jdm.email">{{ user.email || "empty" }}</a></li>
+              <li>Subcription Price/Month:<a href="#" editable-text="jdm.email">{{ user.subcription || "empty" }}</a></li>
                <li>Phone No: </li>
                </ul>
             </div></td>
@@ -534,15 +549,17 @@
             <td>05 November 2015</td>
             <td>Yokohama</td>
             <td data-toggle="collapse" data-target="#demo3" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-               <td class="text-success">Yes</td>
+             <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
+   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
+  </a></span></td>
             <td class="btn btn-primary text-error">Notify</td>
         </tr>
         <tr>
             <td colspan="6"  class="hiddenRow"><div id="demo3" class="accordian-body collapse">
                <ul>
-              <li>Address:</li>
-              <li>Email:</li>
-              <li>Subcription Price/Month:</li>
+                <li>Address: <a href="#" editable-text="jdm.address">{{ user.address || "empty" }}</a></li>
+              <li>Email: <a href="#" editable-text="jdm.email">{{ user.email || "empty" }}</a></li>
+              <li>Subcription Price/Month:<a href="#" editable-text="jdm.email">{{ user.subcription || "empty" }}</a></li>
                <li>Phone No: </li>
                </ul>
             </div></td>
@@ -552,7 +569,9 @@
             <td>05 Dec 2015</td>
             <td>Works</td>
             <td data-toggle="collapse" data-target="#demo4" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-               <td class="text-success">Yes</td>
+            <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
+   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
+  </a></span></td>
             <td class="btn btn-primary text-error">Notify</td>
         </tr>
         <tr>
@@ -696,12 +715,14 @@
                               </tbody>
                           </table>
 
+
+
                           </div>
               <!-- page end-->
 
 
                           </section>
-                         
+                        
                         </div><!-- /content -->
                       </div><!-- /tabs -->
                     </section>
@@ -832,42 +853,22 @@
     <script src="assets/js/jquery.tablesorter.js" type="text/javascript"></script>
 
 
-    <script>
 
-      $(document).ready(function() 
-    { 
-        $("#myTable").tablesorter( { sortList: [[0,10000]], dateFormat : "us" }
+    <!--Bootstrap 2 --> 
 
-); 
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>  
 
-        $("#show_1").click(function(event) {
-    $("#extra_1" + $(this).attr('id').substr(6)).slideToggle("fast");
-    event.preventDefault();
-})
-      });
-    </script>
+    <!--Angular Xeditable --> 
 
-  <script>
-      //custom select box
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <!-- Angular-xeditable -->
+    <link href="angular-xeditable/css/xeditable.css" rel="stylesheet">
+    <script src="angular-xeditable/js/xeditable.js"></script>
+    <!-- app.js -->
+    <script src="assets/app.js"></script>
 
-    $(document).ready(
-  function() {
-  $('td p').slideUp();
-    $('td h2').click(
-      function(){
-
-       $(this).siblings('p').slideToggle();
-      }
-      );
-  }
-  );
-
-
-      $(function(){
-          $('select.styled').customSelect();
-      });
-
-  </script>
 
   <script type="text/javascript">
     YUI().use('node', 'crop-box', function(Y){
@@ -965,3 +966,4 @@ olark.identify('1783-326-10-5686');/*]]>*/</script><noscript><a href="https://ww
   
   </body>
 </html>
+
