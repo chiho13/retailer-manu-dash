@@ -242,6 +242,7 @@ ul.top-menu > li > .view-simulator:before {
     width: 210px;
     height: 100%;
     position: fixed;
+    top:40px;
     background: #aaa;
 }
 
@@ -425,7 +426,7 @@ ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i, ul.sidebar-menu li a
 }
 
 .header {
-    position: relative;
+    position: fixed;
     cursor: pointer;
     left: 0;
     right: 0;
@@ -824,6 +825,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .ds {
 	background: #ffffff;
 	padding-top: 20px;
+    top:50px;
 }
 
 .ds h4 {
@@ -2439,7 +2441,7 @@ label {
 }
 
 .sidebar-footer {
- position: absolute;
+ position: fixed;
  bottom:40px ;
  padding: 20px;
  margin-left: 15px

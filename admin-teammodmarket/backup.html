@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-<html ng-app="app" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,7 @@
     <title>theModMarket - Manufacturer Platform</title>
 
     <!-- Bootstrap core CSS -->
-    <!--
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
@@ -23,29 +20,12 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/mainstyle.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="assets/css/buttons.css" />
+       <link rel="stylesheet" type="text/css" href="assets/css/vicons-font.css" />
+
+    <link rel="stylesheet" href="assets/css/to-do.css">
 
     <script src="assets/js/chart-master/Chart.js"></script>
-
-       <link href="assets/js/advanced-datatable/media/css/demo_page.css" rel="stylesheet" />
-    <link href="assets/js/advanced-datatable/media/css/demo_table.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/js/advanced-datatable/media/css/DT_bootstrap.css" />
-
-     <!-- Custom styles for this template -->
-   
-
-    <link rel="stylesheet" type="text/css" href="assets/css/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/tabstyles.css" />
-      <script src="assets/js/modernizr.custom.js"></script>
-
-     
-
-
-    <!--X Editable -->
-
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-editable.css" />
-    <link rel="stylesheet" type="text/css" href="assets/js/bootstrap-editable.min.js" />
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -231,7 +211,7 @@
 
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle menu-list" href="#">
-                          <img class="img-circle" src="assets/img/teamavatar/rachel.png" width="30px" height="30px" align="">
+                           <img class="img-circle" src="assets/img/teamavatar/rachel.png" width="30px" height="30px" align="">
                            <span > <i class= "fa fa-chevron-down thatarrow"></i></span>
                         </a>
                         <ul class="dropdown-menu extended tasks-bar">
@@ -243,7 +223,7 @@
                               <li class="no-hover">
                                 <a href="index.html#">
                                     <div class="task-info">
-                                    <div class="retailer-name">Rachel</div>
+                                    <div class="retailer-name">Rachel Bartholomew</div>
                                         <div class="desc"> View Profile </div>
                                         
                                     </div>
@@ -299,7 +279,7 @@
                         
                     
                   <li class="mt">
-                      <a href="index.html">
+                      <a href="index.html" class="active">
                           <i class="fa fa-dashboard"></i>
                           <span>Dashboard</span>
                       </a>
@@ -336,7 +316,7 @@
                      
                   </li>
                  <li class="submenu">
-                      <a href="customerlist.html" class="active">
+                      <a href="customerlist.html">
                           <i class="fa fa-tasks"></i>
                           <span>Customer List</span>
                       </a>
@@ -430,353 +410,14 @@
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <!--Start of Tawk.to Script-->
-
-<!--End of Tawk.to Script-->
-
-<section id="main-content" >
+      <section id="main-content">
           <section class="wrapper">
 
-            <!-- <table id="myTable" class="tablesorter"> 
-<thead> 
-<tr> 
-    <th>Last Name</th> 
-    <th>First Name</th> 
-    <th>Email</th> 
-    <th>Due</th> 
-    <th>Web Site</th> 
-</tr> 
-</thead> 
-<tbody> 
-<tr> 
-    <td>Smith</td> 
-    <td>John</td> 
-    <td>jsmith@gmail.com</td> 
-    <td>$50.00</td> 
-    <td>http://www.jsmith.com</td> 
-</tr> 
-<tr> 
-    <td>Bach</td> 
-    <td>Frank</td> 
-    <td>fbach@yahoo.com</td> 
-    <td>$50.00</td> 
-    <td>http://www.frank.com</td> 
-</tr> 
-<tr> 
-    <td>Doe</td> 
-    <td>Jason</td> 
-    <td>jdoe@hotmail.com</td> 
-    <td>$100.00</td> 
-    <td>http://www.jdoe.com</td> 
-</tr> 
-<tr> 
-    <td>Conway</td> 
-    <td>Tim</td> 
-    <td>tconway@earthlink.net</td> 
-    <td>$50.00</td> 
-    <td>http://www.timconway.com</td> 
-</tr> 
-</tbody> 
-</table>  -->
-              <section ng-controller="Ctrl">
-                      <div class="tabs tabs-style-linebox" style="margin-top:70px">
-                        <nav>
-                          <ul>
-                            <li><a href="#section-linebox-1"><span>Retailer</span></a></li>
-                            <li><a href="#section-linebox-2"><span>Manufacturer</span></a></li>
-                           
-                          </ul>
-                        </nav>
-                        <div class="content-wrap">
-                          <section id="section-linebox-1">
-                            <div class="content-panel">
-                                <table class="table table-condensed" style="border-collapse:collapse;">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Due Date</th>
-            <th>Retailer</th>
-            <th>Description</th>
-            <th>Activated</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td >1</td>
-            <td>15 October 2013</td>
-            <td> Fresh Co</td>
-            <td data-toggle="collapse" data-target="#demo1" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-            <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
-   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
-  </a></span></td>
-            <td class="btn btn-primary text-error">Notify</td>
-            
-        </tr>
-        <tr >
-            <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1">
-            <ul colspan="3">
-              <li>Address: <a href="#" editable-text="user.address">{{ user.address || "empty" }}</a></li>
-              <li>Email: <a href="#" editable-text="user.email">{{ user.email || "empty" }}</a></li>
-              <li>Subcription Price/Month: $</li>
-               <li>Phone No: </li>
-               </ul>
-
-             </div> </td>
-        </tr>
-        <tr >
-            <td>2</td>
-            <td>05 November 2015</td>
-            <td>Wheels</td>
-            <td data-toggle="collapse" data-target="#demo2" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-               <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
-   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
-  </a></span></td>
-            <td class="btn btn-primary text-error">Notify</td>
-        </tr>
-        <tr>
-            <td colspan="6" class="hiddenRow"><div id="demo2" class="accordian-body collapse">
-                 <ul>
-               <li>Address: <a href="#" editable-text="jdm.address2">{{ user.address || "empty" }}</a></li>
-              <li>Email: <a href="#" editable-text="jdm.email2">{{ user.email || "empty" }}</a></li>
-              <li>Subcription Price/Month:<a href="#" editable-text="jdm.email">{{ user.subcription || "empty" }}</a></li>
-               <li>Phone No: </li>
-               </ul>
-            </div></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>05 November 2015</td>
-            <td>Auto Tune shop</td>
-            <td data-toggle="collapse" data-target="#demo3" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-             <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
-   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
-  </a></span></td>
-            <td class="btn btn-primary text-error">Notify</td>
-        </tr>
-        <tr>
-            <td colspan="6"  class="hiddenRow"><div id="demo3" class="accordian-body collapse">
-               <ul>
-                <li>Address: <a href="#" editable-text="jdm.address">{{ user.address || "empty" }}</a></li>
-              <li>Email: <a href="#" editable-text="jdm.email">{{ user.email || "empty" }}</a></li>
-              <li>Subcription Price/Month:<a href="#" editable-text="jdm.email">{{ user.subcription || "empty" }}</a></li>
-               <li>Phone No: </li>
-               </ul>
-            </div></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>05 Dec 2015</td>
-            <td>Works</td>
-            <td data-toggle="collapse" data-target="#demo4" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-            <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
-   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
-  </a></span></td>
-            <td class="btn btn-primary text-error">Notify</td>
-        </tr>
-        <tr>
-            <td colspan="6"  class="hiddenRow"><div id="demo4" class="accordian-body collapse">
-               <ul>
-              <li>Address:</li>
-              <li>Email:</li>
-              <li>Subcription Price/Month:</li>
-               <li>Phone No: </li>
-               </ul>
-            </div></td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>25 November 2015</td>
-            <td>Mugen</td>
-            <td data-toggle="collapse" data-target="#demo5" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-               <td class="text-success">No</td>
-            <td class="btn btn-primary text-error">Notify</td>
-        </tr>
-        <tr>
-            <td colspan="6"  class="hiddenRow"><div id="demo5" class="accordian-body collapse">
-               <ul>
-              <li>Address:</li>
-              <li>Email:</li>
-              <li>Subcription Price/Month:</li>
-               <li>Phone No: </li>
-               </ul>
-            </div></td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>03 January 2016</td>
-            <td>JDM</td>
-            <td data-toggle="collapse" data-target="#demo6" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-               <td class="text-success">Yes</td>
-            <td class="btn btn-primary text-error">Notify</td>
-        </tr>
-        <tr>
-            <td colspan="6"  class="hiddenRow"><div id="demo6" class="accordian-body collapse">
-               <ul>
-              <li>Address:</li>
-              <li>Email:</li>
-              <li>Subcription Price/Month:</li>
-               <li>Phone No: </li>
-               </ul>
-            </div></td>
-        </tr>
-    </tbody>
-</table>
-                          </div>
-              <!-- page end-->
-                          </section>
-                         
-                        </div><!-- /content -->
-
-                        <div class="content-wrap">
-                          <section id="section-linebox-2">
-                            <div class="content-panel">
-                                <table class="table table-condensed" style="border-collapse:collapse;">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Due Date</th>
-            <th>Manufacturer</th>
-            <th>Description</th>
-            <th>Activated</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td >1</td>
-            <td>15 October 2013</td>
-            <td> Fresh Co</td>
-            <td data-toggle="collapse" data-target="#manu1" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-            <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
-   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
-  </a></span></td>
-            <td class="btn btn-primary text-error">Notify</td>
-            
-        </tr>
-        <tr >
-            <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="manu1">
-            <ul colspan="3">
-              <li>Address: <a href="#" editable-text="user.address">{{ user.address || "empty" }}</a></li>
-              <li>Email: <a href="#" editable-text="user.email">{{ user.email || "empty" }}</a></li>
-              <li>Subcription Price/Month: $</li>
-               <li>Phone No: </li>
-               </ul>
-
-             </div> </td>
-        </tr>
-        <tr >
-            <td>2</td>
-            <td>05 November 2015</td>
-            <td>JDM</td>
-            <td data-toggle="collapse" data-target="#manu2" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-               <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
-   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
-  </a></span></td>
-            <td class="btn btn-primary text-error">Notify</td>
-        </tr>
-        <tr>
-            <td colspan="6" class="hiddenRow"><div id="manu2" class="accordian-body collapse">
-                 <ul>
-               <li>Address: <a href="#" editable-text="jdm.address">{{ user.address || "empty" }}</a></li>
-              <li>Email: <a href="#" editable-text="jdm.email">{{ user.email || "empty" }}</a></li>
-              <li>Subcription Price/Month:<a href="#" editable-text="jdm.email">{{ user.subcription || "empty" }}</a></li>
-               <li>Phone No: </li>
-               </ul>
-            </div></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>05 November 2015</td>
-            <td>Suspensions Ltd</td>
-            <td data-toggle="collapse" data-target="#manu3" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-             <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
-   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
-  </a></span></td>
-            <td class="btn btn-primary text-error">Notify</td>
-        </tr>
-        <tr>
-            <td colspan="6"  class="hiddenRow"><div id="manu3" class="accordian-body collapse">
-               <ul>
-                <li>Address: <a href="#" editable-text="jdm.address">{{ user.address || "empty" }}</a></li>
-              <li>Email: <a href="#" editable-text="jdm.email">{{ user.email || "empty" }}</a></li>
-              <li>Subcription Price/Month:<a href="#" editable-text="jdm.email">{{ user.subcription || "empty" }}</a></li>
-               <li>Phone No: </li>
-               </ul>
-            </div></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>05 Dec 2015</td>
-            <td>Works</td>
-            <td data-toggle="collapse" data-target="#manu4" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-            <td class="text-success"><span><a href="#" editable-select="user.status" e-ng-options="s.value as s.text for s in statuses">
-   {{ (statuses | filter:{value: user.status})[0].text || 'Not set' }}
-  </a></span></td>
-            <td class="btn btn-primary text-error">Notify</td>
-        </tr>
-        <tr>
-            <td colspan="6"  class="hiddenRow"><div id="manu4" class="accordian-body collapse">
-               <ul>
-              <li>Address:</li>
-              <li>Email:</li>
-              <li>Subcription Price/Month:</li>
-               <li>Phone No: </li>
-               </ul>
-            </div></td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>25 November 2015</td>
-            <td>Mugen</td>
-            <td data-toggle="collapse" data-target="#manu5" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-               <td class="text-success">No</td>
-            <td class="btn btn-primary text-error">Notify</td>
-        </tr>
-        <tr>
-            <td colspan="6"  class="hiddenRow"><div id="manu5" class="accordian-body collapse">
-               <ul>
-              <li>Address:</li>
-              <li>Email:</li>
-              <li>Subcription Price/Month:</li>
-               <li>Phone No: </li>
-               </ul>
-            </div></td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>03 January 2016</td>
-            <td>JDM</td>
-            <td data-toggle="collapse" data-target="#demo6" class="accordion-toggle" style="cursor:pointer"><span><i class="fa fa-info"></i></span></td>
-               <td class="text-success">Yes</td>
-            <td class="btn btn-primary text-error">Notify</td>
-        </tr>
-        <tr>
-            <td colspan="6"  class="hiddenRow"><div id="demo6" class="accordian-body collapse">
-               <ul>
-              <li>Address:</li>
-              <li>Email:</li>
-              <li>Subcription Price/Month:</li>
-               <li>Phone No: </li>
-               </ul>
-            </div></td>
-        </tr>
-    </tbody>
-</table>
-
-
-
-                          </div>
-              <!-- page end-->
-
-
-                          </section>
-                        
-                        </div><!-- /content -->
-                      </div><!-- /tabs -->
-                    </section>
+              <div style="margin-top:150px">
+                  <button class="button button--ujarak"><h3><i class="fa fa-download"></i> Backup</h3> </button>
+                </div>
           </section>
-  </section>
+      </section>
 
       <br>
       <br>
@@ -898,26 +539,16 @@
 
     </script>
 
-    <script src="assets/js/jquery-latest.js" type="text/javascript"></script>
-    <script src="assets/js/jquery.tablesorter.js" type="text/javascript"></script>
+  <script>
+      //custom select box
 
 
 
-    <!--Bootstrap 2 --> 
+      $(function(){
+          $('select.styled').customSelect();
+      });
 
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>  
-
-    <!--Angular Xeditable --> 
-
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-    <!-- Angular-xeditable -->
-    <link href="angular-xeditable/css/xeditable.css" rel="stylesheet">
-    <script src="angular-xeditable/js/xeditable.js"></script>
-    <!-- app.js -->
-    <script src="assets/app.js"></script>
-
+  </script>
 
   <script type="text/javascript">
     YUI().use('node', 'crop-box', function(Y){
@@ -962,57 +593,7 @@
       })();
     </script>
 
-    <!-- Tab -->
-
-    <script src="assets/js/cbpFWTabs.js"></script>
-    <script>
-      (function() {
-
-        [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
-          new CBPFWTabs( el );
-        });
-
-      })();
-    </script>
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/55e9d5a1d4058169055cefc8/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
-   <!-- begin olark code -->
-<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
-f[z]=function(){
-(a.s=a.s||[]).push(arguments)};var a=f[z]._={
-},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
-f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
-0:+new Date};a.P=function(u){
-a.p[u]=new Date-a.p[0]};function s(){
-a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
-hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
-return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
-b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
-b.contentWindow[g].open()}catch(w){
-c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
-var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
-b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
-loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-/* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('1783-326-10-5686');/*]]>*/</script><noscript><a href="https://www.olark.com/site/1783-326-10-5686/contact" title="Contact us" target="_blank"></noscript>
-<!-- end olark code -->
   
 
-    <!-- js placed at the end of the document so the pages load faster -->
-  
   </body>
 </html>
-
