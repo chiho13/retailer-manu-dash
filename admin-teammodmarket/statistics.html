@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7,24 +7,18 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>theModMarket - Manufacturer Platform</title>
+    <title>DASHGUM - Bootstrap Admin Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
-    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
-    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">    
-    
+        
     <!-- Custom styles for this template -->
     <link href="assets/css/mainstyle.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/buttons.css" />
-    <link rel="stylesheet" href="assets/css/to-do.css">
-
-    <script src="assets/js/chart-master/Chart.js"></script>
     
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -39,7 +33,7 @@
       TOP BAR CONTENT & NOTIFICATIONS
       *********************************************************************************************************************************************************** -->
       <!--header start-->
-     <header class="header black-bg">
+      <header class="header black-bg">
               <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
@@ -209,7 +203,7 @@
 
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle menu-list" href="#">
-                           <img src="assets/img/ui-sam.jpg" class="img-circle" width="30">
+                           <img class="img-circle" src="assets/img/teamavatar/rachel.png" width="30px" height="30px" align="">
                            <span > <i class= "fa fa-chevron-down thatarrow"></i></span>
                         </a>
                         <ul class="dropdown-menu extended tasks-bar">
@@ -221,7 +215,7 @@
                               <li class="no-hover">
                                 <a href="index.html#">
                                     <div class="task-info">
-                                    <div class="retailer-name"> Car Tuning Shop</div>
+                                    <div class="retailer-name">Rachel Bartholomew</div>
                                         <div class="desc"> View Profile </div>
                                         
                                     </div>
@@ -323,23 +317,21 @@
 
                    <li class="sub-menu">
                       <a href="in_progress.html" >
-                          <i class=" fa fa-bar-chart-o"></i>
+                          <i class=" fa fa-road"></i>
                           <span>In Progress</span>
                       </a>
                       
-                  </li>
-
-                  <li class="submenu">
-                      <a href="messaging.html" >
-                          <i class="fa fa-check"></i>
-                          <span>Messaging</span>
+                   <li class="submenu">
+                      <a href="statistics.html"  class="active">
+                          <i class="fa fa-bar-chart-o"></i>
+                          <span>Statistics</span>
                       </a>
                     
                   </li>
 
                   <li class="submenu">
                       <a href="backup.html">
-                          <i class="fa fa-link"></i>
+                          <i class="fa fa-download"></i>
                           <span>Backup</span>
                       </a>
                     
@@ -408,16 +400,56 @@
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <!--Start of Tawk.to Script-->
-
-<!--End of Tawk.to Script-->
-
-      <br>
-      <br>
+      <section id="main-content">
+          <section class="wrapper">
+          <h3><i class="fa fa-angle-right"></i> Chartjs Charts</h3>
+              <!-- page start-->
+              <div class="tab-pane" id="chartjs">
+                  <div class="row mt">
+                      <div class="col-lg-6">
+                          <div class="content-panel">
+							  <h4><i class="fa fa-angle-right"></i> Country</h4>
+                              <div class="panel-body text-center">
+                                  <canvas id="doughnut" height="300" width="400"></canvas>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="content-panel">
+							  <h4><i class="fa fa-angle-right"></i> User Growth</h4>
+                              <div class="panel-body text-center">
+                                  <canvas id="line" height="300" width="400"></canvas>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="row mt">
+                      <div class="col-lg-6">
+                          <div class="content-panel">
+							  <h4><i class="fa fa-angle-right"></i> Number of Parts</h4>
+                              <div class="panel-body text-center">
+                                  <canvas id="bar" height="300" width="400"></canvas>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="content-panel">
+							  <h4><i class="fa fa-angle-right"></i> Demographic</h4>
+                              <div class="panel-body text-center">
+                                  <canvas id="pie" height="300" width="400"></canvas>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- page end-->
+          </section>          
+      </section><!-- /MAIN CONTENT -->
 
       <!--main content end-->
       <!--footer start-->
-     <footer class="site-footer">
+      <footer class="site-footer">
           <div class="text-center">
              &copy 2015 Powered by theModmarket. All Rights Reserved.
               <a href="index.html#" class="go-top">
@@ -430,197 +462,27 @@
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery-1.8.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-    <script src="assets/js/jquery.sparkline.js"></script>
 
 
     <!--common script for all pages-->
     <script src="assets/js/common-scripts.js"></script>
-    
-    <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
-    <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
 
     <!--script for this page-->
-    <script src="assets/js/sparkline-chart.js"></script>    
-	<script src="assets/js/zabuto_calendar.js"></script>	
-	
-	<script type="text/javascript">
-        $(document).ready(function () {
-        var unique_id = $.gritter.add({
-            // (string | mandatory) the heading of the notification
-            title: 'WELCOME TO THEMODMARKET PLATFORM',
-            // (string | mandatory) the text inside the notification
-            text: ' < Start here to add products and brands',
-            // (string | optional) the image to display on the left
-            // image: 'assets/img/ui-sam.jpg',
-            // (bool | optional) if you want it to fade out on its own or just sit there
-            sticky: true,
-            // (int | optional) the time you want it to be alive for before fading out
-            time: '',
-            // (string | optional) the class name you want to apply to that specific message
-            class_name: 'my-sticky-class'
-        });
-
-        return false;
-        });
-	</script>
-	
-	<script type="application/javascript">
-        $(document).ready(function () {
-            $("#date-popover").popover({html: true, trigger: "manual"});
-            $("#date-popover").hide();
-            $("#date-popover").click(function (e) {
-                $(this).hide();
-            });
-        
-            $("#my-calendar").zabuto_calendar({
-                action: function () {
-                    return myDateFunction(this.id, false);
-                },
-                action_nav: function () {
-                    return myNavFunction(this.id);
-                },
-                ajax: {
-                    url: "show_data.php?action=1",
-                    modal: true
-                },
-                legend: [
-                    {type: "text", label: "Special event", badge: "00"},
-                    {type: "block", label: "Regular event", }
-                ]
-            });
-        });
-        
-        
-        function myNavFunction(id) {
-            $("#date-popover").hide();
-            var nav = $("#" + id).data("navigation");
-            var to = $("#" + id).data("to");
-            console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
-        }
-    </script>
-
-    <script>
-         $(document).ready(function () {
-            $("#requestbrand").live("click", function() {
-                 $("#menu-content .wrapper").empty();
-              $("#menu-content .wrapper").load("requestbrand.html");
-            });
-         });
-    </script>
-
-    <!-- crop box -->
-  <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
-  <script src="assets/js/cropbox.js"></script>  
-  
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>    
-    <script src="assets/js/tasks.js" type="text/javascript"></script>
-
-     <script>
-      $(document).ready(function() {
-          TaskList.initTaskWidget();
-      });
-
-      $(function() {
-          $( "#sortable" ).sortable();
-          $( "#sortable" ).disableSelection();
-      });
-
-    </script>
-
+    <script src="assets/js/chart-master/Chart.js"></script>
+    <script src="assets/js/chartjs-conf.js"></script>
+    
   <script>
       //custom select box
-
-
 
       $(function(){
           $('select.styled').customSelect();
       });
 
   </script>
-
-  <script type="text/javascript">
-    YUI().use('node', 'crop-box', function(Y){
-        var options =
-        {
-            imageBox: '.imageBox',
-            thumbBox: '.thumbBox',
-            spinner: '.spinner',
-            imgSrc: 'avatar.png'
-        }
-        var cropper = new Y.cropbox(options);
-        Y.one('#file').on('change', function(){
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                options.imgSrc = e.target.result;
-                cropper = new Y.cropbox(options);
-            }
-            reader.readAsDataURL(this.get('files')._nodes[0]);
-            this.get('files')._nodes = [];
-        })
-        Y.one('#btnCrop').on('click', function(){
-            var img = cropper.getDataURL()
-            // $('.cropped').empty();
-            Y.one('.cropped').empty();
-            Y.one('.cropped').append('<img src="'+img+'">');
-        })
-        Y.one('#btnZoomIn').on('click', function(){
-            cropper.zoomIn();
-        })
-        Y.one('#btnZoomOut').on('click', function(){
-            cropper.zoomOut();
-        })
-    })
-</script>
-
-<script>
-      (function() {
-        var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-        if(isSafari) {
-          document.getElementById('support-note').style.display = 'block';
-        }
-      })();
-    </script>
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/55e9d5a1d4058169055cefc8/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
-   <!-- begin olark code -->
-<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
-f[z]=function(){
-(a.s=a.s||[]).push(arguments)};var a=f[z]._={
-},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
-f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
-0:+new Date};a.P=function(u){
-a.p[u]=new Date-a.p[0]};function s(){
-a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
-hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
-return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
-b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
-b.contentWindow[g].open()}catch(w){
-c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
-var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
-b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
-loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-/* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('1783-326-10-5686');/*]]>*/</script><noscript><a href="https://www.olark.com/site/1783-326-10-5686/contact" title="Contact us" target="_blank"></noscript>
-<!-- end olark code -->
-  
 
   </body>
 </html>
