@@ -10,10 +10,10 @@
     <title>theModMarket - Manufacturer Platform</title>
 
     <!-- Bootstrap core CSS -->
-    <!--
+    
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
@@ -288,7 +288,7 @@
                   <div class="centered">
                   
                   </div>
-                  <div class="centered logohover"><a href="profile.html" class="cropped"><img src="vossen_wheels.png" width="80"></a>
+                <div class="centered logohover"><a href="profile.html" class="cropped"><img src="assets/img/teamavatar/rachel.png" width="80"></a>
                     <button type="button" class="btn btn-info btn-lg btn-editlogo" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></button>
 
                   </div>
@@ -449,15 +449,14 @@
                         </nav>
                         <div class="content-wrap">
                           <section id="section-linebox-1">
-                            <div class="content-panel">
+                            <div class="content-panel content-padding">
                              <table id="myTable" class="tablesorter table table-striped table-advance table-hover">
                               <thead>
                               <tr>
                                 <th> Sign Up Date </th>
                                   <th>Retailer</th>
-                                  <th class="hidden-phone"><i class="fa fa-question-circle"></i> Database Received</th>
-                                  <th></i>Rendered</th>
-                                  <th><i class=" fa fa-edit"></i> Sign off</th>
+                                  <th class="hidden-phone"><i class="fa fa-question-circle"></i> Chosen Manufacturers</th>
+                                  
                                   
                               </tr>
                               </thead>
@@ -465,26 +464,15 @@
                               <tr>  
                                   <td>10/23/2015</td>
                                   <td><a href="basic_table.html#">freshco</a></td>
-                                <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                  </td>
-                                 <td><span class="label label-warning label-mini">Pending</span></td>
-                                  <td><span class="label label-warning label-mini">Pending</span></td>
+                                <td><span class="label label-warning label-mini">Pending</span></td>
+                             
                                  
                               </tr>
                               <tr>  
                                 <td>12/13/2015</td>
                                  <td><a href="basic_table.html#">Auto Tuning</a></td>
-                                <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                  </td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                     
-                                  </td>
-                               <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                  </td>
+                                 <td><span class="label label-warning label-mini">Pending</span></td>
+                                
                                  
                               </tr>
                               <tr>
@@ -493,8 +481,7 @@
                                 <td>
                                       <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
                                   </td>
-                                  <td><span class="label label-warning label-mini">Pending</span></td>
-                                   <td><span class="label label-warning label-mini">Pending</span></td>
+                                  
                               </tr>
                               <tr>
                               <td>09/28/2015</td>
@@ -502,8 +489,6 @@
                                 <td>
                                       <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
                                   </td>
-                                    <td><span class="label label-warning label-mini">Pending</span></td>
-                                  <td><span class="label label-warning label-mini">Pending</span></td>
                               </tr>
                               <tr>
                                 <td>11/02/2015</td>
@@ -511,10 +496,7 @@
                                 <td>
                                       <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
                                   </td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                  </td>
-                                  <td><span class="label label-warning label-mini">Pending</span></td>
+                                  
                                  
                               </tr>
                               </tbody>
@@ -534,7 +516,7 @@
                                 <th> Sign Up Date </th>
                                   <th>Manufacturer</th>
                                   <th class="hidden-phone"><i class="fa fa-question-circle"></i> Database Received</th>
-                                  <th></i>Rendered</th>
+                                  <th><i class="fa fa-question-circle"></i> Parts Rendered</th>
                                   <th><i class=" fa fa-edit"></i> Sign off</th>
                                   
                               </tr>
@@ -655,27 +637,6 @@
 ); 
 
   </script>
-	
-	<script type="text/javascript">
-        $(document).ready(function () {
-        var unique_id = $.gritter.add({
-            // (string | mandatory) the heading of the notification
-            title: 'WELCOME TO THEMODMARKET PLATFORM',
-            // (string | mandatory) the text inside the notification
-            text: ' < Start here to add products and brands',
-            // (string | optional) the image to display on the left
-            // image: 'assets/img/ui-sam.jpg',
-            // (bool | optional) if you want it to fade out on its own or just sit there
-            sticky: true,
-            // (int | optional) the time you want it to be alive for before fading out
-            time: '',
-            // (string | optional) the class name you want to apply to that specific message
-            class_name: 'my-sticky-class'
-        });
-
-        return false;
-        });
-	</script>
 	
 	<script type="application/javascript">
         $(document).ready(function () {

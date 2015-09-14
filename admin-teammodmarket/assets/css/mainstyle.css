@@ -1264,8 +1264,7 @@ PANELS CONFIGURATIONS
 .content-panel {
 	background: #ffffff;
 	box-shadow: 0px 3px 2px #aab2bd;
-	padding-top: 15px;
-	padding-bottom: 5px;
+	padding: 20px;
 }
 .content-panel h4 {
 	margin-left: 10px;
@@ -2462,9 +2461,9 @@ label {
 .imageBox
 {
     position: relative;
-    margin-left:100px;
+    margin: 0 auto;
     height: 250px;
-    width: 400px;
+    width: 250px;
     border:1px solid #aaa;
     background: #fff;
     overflow: hidden;
@@ -2475,12 +2474,10 @@ label {
 .imageBox .thumbBox
 {
     position: absolute;
-    top: 65%;
-    left: 44%;
-    width: 250px;
-    height: 120px;
-    margin-top: -100px;
-    margin-left: -100px;
+    top: 10%;
+    left: 10%;
+    width: 200px;
+    height: 200px;
     box-sizing: border-box;
     border: 1px solid rgb(102, 102, 102);
     box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
@@ -2500,8 +2497,8 @@ label {
 }
 
 .cropped img {
-    width: 150px;
-   /* border-radius: 50%;*/
+    width: 100px;
+    border-radius: 50%;
 }
 
 input[type="text"] {
@@ -2570,6 +2567,9 @@ textarea {
      right:2px;
 }
 
+.table {
+    border: 1px solid #ccc;
+}
 
 .table thead tr {
     text-align: center;
